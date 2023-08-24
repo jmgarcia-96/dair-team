@@ -1,0 +1,29 @@
+
+<!-- ======= Services Section ======= -->
+<section id="services" class="services">
+  <div class="container" data-aos="fade-up">
+    <div class="section-header">
+      <p>Nuestros <span>Servicios</span></p>
+    </div>
+
+    <div class="row">
+      <div
+        class="col-lg-3 col-md-6 d-flex align-items-stretch"
+        data-aos="zoom-in"
+        data-aos-delay="100"
+        *ngFor="let service of services"
+      >
+        <div class="icon-box">
+          <div class="icon"><i [class]="service.icon"></i></div>
+          <h4>
+            <a>{{ service.title }}</a>
+          </h4>
+          <p>{{ service.description }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Services Section -->
+
+<app-faq></app-faq>

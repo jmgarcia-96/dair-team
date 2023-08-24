@@ -1,0 +1,29 @@
+<!-- ======= Frequently Asked Questions Section ======= -->
+<section id="faq" class="faq section-bg pt-0">
+  <div class="container" data-aos="fade-up">
+    <div class="section-header">
+      <!--faq-title-->
+      <p>Preguntas <span>Frecuentes</span></p>
+    </div>
+
+    <div class="faq-list">
+      <ul id="faq-items">
+        <li data-aos="fade-up" *ngFor="let item of faq; let i = index">
+          <i class="bx bx-help-circle icon-help"></i>
+          <a (click)="toggleAccordian($event, i)"
+            >{{ item.question }}
+            <i class="bx bx-chevron-down icon-show" [hidden]="item.isActive"></i
+            ><i
+              class="bx bx-chevron-up icon-close"
+              [hidden]="!item.isActive"
+            ></i>
+          </a>
+          <div class="panel" id="panel" hide="!item.isActive">
+            <p>{{ item.answer }}</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+<!-- End Frequently Asked Questions Section -->
