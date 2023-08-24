@@ -7,7 +7,7 @@ export class ContactConstants {
     },
     {
       title: 'Correo electrónico',
-      text: 'contacto@warriorsteam.com',
+      text: 'dair.teamfit@gmail.com',
       icon: 'bi bi-envelope',
     },
     { title: 'Teléfono', text: '+34 654 321 123', icon: 'bi bi-telephone' },

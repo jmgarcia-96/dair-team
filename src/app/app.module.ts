@@ -17,6 +17,7 @@ import { FilterTabsPipe } from './pipes/filter-tabs.pipe';
 import { SharedModule } from './shared/shared.module';
 import { ProductDetailComponent } from './components/products/product-detail/product-detail.component';
 import { FaqComponent } from './components/services/faq/faq.component';
+import { ButtonModule } from 'primeng/button';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { FaqComponent } from './components/services/faq/faq.component';
     AppRoutingModule,
     NgbModule,
     SharedModule,
+    ButtonModule,
   ],
   exports: [
     HeaderComponent,
