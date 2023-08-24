@@ -1,0 +1,15 @@
+:host ::ng-deep p-menubarsub {
+  width: 100% !important;
+}
+:host ::ng-deep .p-menubar-root-list {
+  justify-content: center;
+}
+
+:host ::ng-deep .p-menubar-end {
+  margin-left: 0% !important;
+}
+:host ::ng-deep .p-menubar {
+  justify-content: center !important;
+  background-color: transparent;
+  border: none;
+}
