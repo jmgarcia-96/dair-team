@@ -1,39 +1,110 @@
-<!-- ======= Header ======= -->
-<header id="header" class="header fixed-top d-flex align-items-center">
-  <div class="container d-flex align-items-center justify-content-between">
-    <a
-      routerLink="/hero"
-      class="logo d-flex align-items-center me-auto me-lg-0"
-    >
-      <img src="assets/img/Logo.jpg" alt="" class="img-fluid" />
-      <!-- <p><span>Warriors</span>Team</p> -->
+<!-- <p-menubar [model]="items">
+  <ng-template pTemplate="start">
+    <img
+      src="https://primefaces.org/cdn/primeng/images/primeng.svg"
+      height="40"
+      class="mr-2"
+    />
+  </ng-template>
+  <ng-template pTemplate="end">
+    <input type="text" pInputText placeholder="Search" class="w-full" />
+  </ng-template>
+</p-menubar> -->
+
+<nav
+  [@animateMenu]
+  class="navbar main-navbar on-top"
+  [class.nav-shadow]="this.pageYPosition > 0"
+>
+  <div class="container">
+    <a class="navbar-brand text-light" [routerLink]="'inicio'">
+      <img src="assets/images/me/mario.svg" width="45" />
     </a>
-
-    <nav id="navbar" class="navbar">
-      <ul>
-        <li routerLinkActive="active"><a routerLink="/hero">Inicio</a></li>
-        <li routerLinkActive="active">
-          <a routerLink="/about">¿Por qué nosotros?</a>
-        </li>
-        <li routerLinkActive="active"><a routerLink="/team">Equipo</a></li>
-        <li routerLinkActive="active">
-          <a routerLink="/services">Servicios</a>
-        </li>
-        <li routerLinkActive="active">
-          <a routerLink="/products">Productos</a>
-        </li>
-        <li routerLinkActive="active"><a routerLink="/contact">Contacto</a></li>
-      </ul>
-    </nav>
-
-    <div class="header-social-links d-flex">
-      <a href="#" class="twitter"><i class="bu bi-twitter"></i></a>
-      <a href="#" class="facebook"><i class="bu bi-facebook"></i></a>
-      <a href="#" class="instagram"><i class="bu bi-instagram"></i></a>
+    <ul ngbNav #nav="" class="menu-ul">
+      <li ngbNavItem>
+        <a ngbNavLink (click)="scroll('about')"
+          ><span class="nav-number">01. </span>
+          <span class="underline nav-text"> {{ "Header.Item1" }}</span></a
+        >
+        <ng-template ngbNavContent>First content</ng-template>
+      </li>
+      <li ngbNavItem>
+        <a ngbNavLink (click)="scroll('jobs')"
+          ><span class="nav-number">02. </span>
+          <span class="underline nav-text"> {{ "Header.Item2" }}</span></a
+        >
+        <ng-template ngbNavContent>Second content</ng-template>
+      </li>
+      <li ngbNavItem>
+        <a ngbNavLink (click)="scroll('proyects')"
+          ><span class="nav-number">03. </span>
+          <span class="underline nav-text"> {{ "Header.Item3" }}</span></a
+        >
+        <ng-template ngbNavContent>Second content</ng-template>
+      </li>
+      <li ngbNavItem>
+        <a ngbNavLink (click)="scroll('contact')"
+          ><span class="nav-number">04. </span>
+          <span class="underline nav-text"> {{ "Header.Item4" }}</span></a
+        >
+        <ng-template ngbNavContent>Second content</ng-template>
+      </li>
+      <li ngbNavItem>
+        <a class="main-btn cv-btn" ngbNavLink>
+          {{ "Header.cvBtn" }}
+        </a>
+      </li>
+    </ul>
+    <div class="menu-wrapper">
+      <div
+        [class.animate]="responsiveMenuVisible"
+        (click)="responsiveMenuVisible = !responsiveMenuVisible"
+        class="hamburger-menu"
+      ></div>
     </div>
+    <div
+      class="menu-responsive"
+      [ngStyle]="{ 'pointer-events': !responsiveMenuVisible ? 'none' : '' }"
+    >
+      <aside
+        [class.aside-show]="responsiveMenuVisible"
+        [class.nav-shadow]="this.pageYPosition > 0"
+        class="on-top"
+      >
+        <nav>
+          <ol>
+            <li>
+              <a (click)="scroll('about')">
+                <span>01. </span> {{ "Header.Item1" }}
+              </a>
+            </li>
+            <li>
+              <a (click)="scroll('jobs')">
+                <span>02. </span> {{ "Header.Item2" }}
+              </a>
+            </li>
+            <li>
+              <a (click)="scroll('proyects')">
+                <span>03. </span> {{ "Header.Item3" }}
+              </a>
+            </li>
+            <li>
+              <a (click)="scroll('proyects')">
+                <span>04. </span> {{ "Header.Item4" }}
+              </a>
+            </li>
+            <li>
+              <a class="main-btn cv-btn">
+                {{ "Header.cvBtn" }}
+              </a>
+            </li>
 
-    <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
-    <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+            <!-- <li>
+                          <img src="https://www.worldometers.info/img/flags/us-flag.gif" alt="English">
+                      </li> -->
+          </ol>
+        </nav>
+      </aside>
+    </div>
   </div>
-</header>
-<!-- End Header -->
+</nav>
