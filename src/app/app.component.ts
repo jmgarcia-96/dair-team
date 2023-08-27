@@ -7,7 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit {
   ngOnInit(): void {}
-  title = 'warriors-team';
 
   scrollToTop(): void {
     window.scrollTo(0, 0);

@@ -4,32 +4,33 @@ export class ServicesConstants {
       title: 'Análisis',
       description:
         ' Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi',
-      icon: 'bx bxs-report',
+      icon: 'pi pi-chart-bar',
     },
     {
       title: 'Plan de entrenamiento',
       description:
         ' Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi',
-      icon: 'bx bx-dumbbell',
+      icon: 'pi ',
     },
     {
       title: 'Plan de alimentación',
       description:
         ' Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi',
-      icon: 'bx bxs-bowl-rice',
+      icon: 'pi pi-apple',
     },
     {
       title: 'Seguimiento',
       description:
         ' Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi',
-      icon: 'bx bxs-message-alt-check',
+      icon: 'pi pi-check-circle',
     },
   ];
 
   public readonly faq: any[] = [
     {
       question: '¿Quién hace las asesorías?',
-      answer: 'Las personas que componen el equipo de IDFIT, tanto Daniel como Irene, los cuales están cualificados para diseñar y supervisar cada plan.',
+      answer:
+        'Las personas que componen el equipo de IDFIT, tanto Daniel como Irene, los cuales están cualificados para diseñar y supervisar cada plan.',
       isActive: false,
     },
     {

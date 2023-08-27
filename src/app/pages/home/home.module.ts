@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ButtonModule } from 'primeng/button';
 import { CarouselModule } from 'primeng/carousel';
+import { CardModule } from 'primeng/card';
 import { HeroComponent } from './components/hero/hero.component';
 import { AboutComponent } from './components/about/about.component';
 import { TeamComponent } from './components/team/team.component';
@@ -18,6 +19,6 @@ import { ServicesComponent } from './components/services/services.component';
     ContactComponent,
     ServicesComponent,
   ],
-  imports: [CommonModule, ButtonModule, CarouselModule],
+  imports: [CommonModule, ButtonModule, CarouselModule, CardModule],
 })
 export class HomeModule {}

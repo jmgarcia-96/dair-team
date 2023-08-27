@@ -2,7 +2,7 @@ export class TeamConstants {
   public readonly members: any[] = [
     {
       name: 'Daniel García Lanzas',
-      role: 'CEO Warriors Team',
+      role: 'CEO DAIR Team',
       description:
         'Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima enim corporis et voluptate.',
       academy: [],
@@ -27,7 +27,7 @@ export class TeamConstants {
     },
     {
       name: 'Irene Delgado Romero',
-      role: 'CEO Warriors Team',
+      role: 'CEO DAIR Team',
       description:
         'Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima enim corporis et voluptate.',
       academy: [],

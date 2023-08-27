@@ -1,0 +1,121 @@
+:host ::ng-deep p-menubarsub {
+  width: 100% !important;
+}
+:host ::ng-deep .p-menubar-root-list {
+  justify-content: flex-end;
+}
+
+:host ::ng-deep .p-menubar-start {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+:host ::ng-deep .p-menubar {
+  justify-content: center !important;
+  background-color: #fafafa;
+  border: none;
+  position: sticky;
+  position: -webkit-sticky; // Needed for Safari browsers.
+  z-index: 10000; // This prevents elements to be seen through the toolbar.
+  top: 0; // Required for "position: sticky" to take effect.
+  border-radius: 0;
+  color: var(--color-black) !important;
+}
+
+:host
+  ::ng-deep
+  .p-menubar
+  .p-menubar-root-list
+  > .p-menuitem
+  > .p-menuitem-link {
+  &:focus {
+    box-shadow: none;
+    transform: scaleX(1);
+  }
+  &:hover {
+    //background-color: var(--color-select);
+    background-color: transparent;
+    .p-menuitem-text {
+      color: var(--color-black) !important;
+    }
+    .p-menuitem-icon {
+      color: var(--color-primary) !important;
+    }
+  }
+  & .p-menuitem-icon,
+  .p-menuitem-text {
+    font-weight: 600;
+    color: var(--color-secondary);
+  }
+}
+
+:host ::ng-deep .p-menubar .p-menuitem.active {
+  &::after {
+    transform: scaleX(1) !important;
+  }
+  .p-menuitem-text {
+    color: var(--color-black) !important;
+  }
+  .p-menuitem-icon {
+    color: var(--color-primary) !important;
+  }
+}
+
+.logo-header {
+  text-align: center;
+}
+
+.logo-header:hover {
+  transform: scale(1.1);
+}
+
+.logo-header p {
+  margin: 0;
+  font-size: 35px;
+  font-weight: bold;
+  font-family: var(--font-primary);
+}
+
+.logo-header p span {
+  font-weight: bold;
+  color: var(--color-primary);
+}
+
+// @media screen and (max-width: 960px) {
+//   :host ::ng-deep .p-menubar-start {
+//     display: flex !important;
+//     align-items: center !important;
+//     justify-content: space-between !important;
+//     width: 100% !important;
+//   }
+// }
+
+//LINEA ITEMS MENU
+
+// :host ::ng-deep .p-menubar .p-menuitem {
+//   position: relative;
+//   cursor: pointer;
+//   transition: border-color 0.3s ease-in-out;
+// }
+
+// :host ::ng-deep .p-menubar .p-menuitem:hover {
+//   border-color: var(--color-primary);
+// }
+
+// :host ::ng-deep .p-menubar .p-menuitem::after {
+//   content: "";
+//   position: absolute;
+//   bottom: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 2px;
+//   background-color: var(--color-primary);
+//   transform: scaleX(0);
+//   transform-origin: left center;
+//   transition: transform 0.3s ease-in-out;
+// }
+
+// :host ::ng-deep .p-menubar .p-menuiten:hover::after {
+//   transform: scaleX(1);
+// }

@@ -4,10 +4,108 @@
 @import "primeicons/primeicons.css";
 @import "primeflex/primeflex.css";
 
-body {
-  background-color: #fafafa;
+:root {
+  --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-primary: "Amatic SC", sans-serif;
+  --font-secondary: "Inter", sans-serif;
 }
+
+/* Colors */
+:root {
+  --color-default: #212529;
+  //--color-primary: #08aa19; //#ce1212;
+  --color-primary: #7d153b; //#ce1212;
+  --color-secondary: #7f7f90;
+  --color-select: #f6f4f4;
+  --color-black: black;
+  --color-white: #ffff;
+  --color-bg: #fafafa;
+}
+
+/* Smooth scroll behavior */
+:root {
+  scroll-behavior: smooth;
+}
+
+:root {
+  a {
+    text-decoration: none;
+  }
+}
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  font-family: var(--font-default);
+  color: var(--color-default);
+  background-color: var(--color-bg);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-secondary);
+}
+
+.p-button {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border: 0;
+  &:enabled:hover {
+    background-color: var(--color-secondary);
+  }
+}
+
+/*--------------------------------------------------------------
+# Sections & Section Header
+--------------------------------------------------------------*/
 
 section {
   padding-top: 60px;
+  margin-top: -60px;
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+}
+
+// section {
+//   overflow: hidden;
+//   padding: 80px 0;
+// }
+
+.section-bg {
+  background-color: #fafafa;
+}
+
+.section-header {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.section-header h2 {
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  color: red;
+  text-transform: uppercase;
+  font-family: var(--font-default);
+}
+
+.section-header p {
+  margin: 0;
+  font-size: 48px;
+  font-weight: 600;
+  font-family: var(--font-primary);
+}
+
+.section-header p span,
+.logo-header p span {
+  color: var(--color-primary);
 }
