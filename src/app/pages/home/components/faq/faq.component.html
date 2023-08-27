@@ -1,0 +1,16 @@
+<!-- ======= Frequently Asked Questions Section ======= -->
+<section id="faq" class="faq">
+  <div class="container">
+    <div class="section-header">
+      <p>Preguntas <span>Frecuentes</span></p>
+    </div>
+    <p-accordion>
+      <p-accordionTab header="{{ item.question }}" *ngFor="let item of faq">
+        <p>
+          {{ item.answer }}
+        </p>
+      </p-accordionTab>
+    </p-accordion>
+  </div>
+</section>
+<!-- End Frequently Asked Questions Section -->

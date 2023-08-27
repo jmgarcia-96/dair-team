@@ -49,6 +49,14 @@ export class HeaderComponent implements OnInit {
         },
       },
       {
+        label: 'Preguntas frecuentes',
+        icon: 'pi pi-question-circle',
+        styleClass: localStorage.getItem('page') === 'faq' ? 'active' : '',
+        command: () => {
+          this.scroll('faq');
+        },
+      },
+      {
         label: 'Contacto',
         icon: 'pi pi-fw pi-send', //pi-envelope
         styleClass: localStorage.getItem('page') === 'contact' ? 'active' : '',

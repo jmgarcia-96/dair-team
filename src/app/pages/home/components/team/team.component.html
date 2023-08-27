@@ -5,21 +5,19 @@
       <p>Nuestros <span>Profesionales</span></p>
     </div>
 
-    <div class="flex flex-row justify-content-center align-items-center w-full">
-      <div class="col-12 sm:col-4 text-center" *ngFor="let member of members">
-        <div class="flex flex-row justify-content-center">
-          <p-card header="{{ member.name }}" subheader="{{ member.role }}">
-            <ng-template pTemplate="header">
-              <img alt="Card" [src]="member.img" />
-            </ng-template>
-            <p class="m-0">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Inventore sed consequuntur error repudiandae numquam deserunt
-              quisquam repellat libero asperiores earum nam nobis, culpa ratione
-              quam perferendis esse, cupiditate neque quas!
-            </p>
-          </p-card>
-        </div>
+    <div class="grid">
+      <div class="col-12 md:col text-center" *ngFor="let member of members">
+        <p-card header="{{ member.name }}" subheader="{{ member.role }}">
+          <ng-template pTemplate="header">
+            <img alt="Card" [src]="member.img" />
+          </ng-template>
+          <p class="m-0 text-justify">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore
+            sed consequuntur error repudiandae numquam deserunt quisquam
+            repellat libero asperiores earum nam nobis, culpa ratione quam
+            perferendis esse, cupiditate neque quas!
+          </p>
+        </p-card>
       </div>
     </div>
   </div>

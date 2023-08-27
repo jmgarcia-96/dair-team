@@ -1,15 +1,21 @@
 <!-- ======= Services Section ======= -->
 <section id="services" class="services">
-  <div class="container" data-aos="fade-up">
+  <div class="container">
     <div class="section-header">
       <p>Nuestros <span>Servicios</span></p>
     </div>
 
-    <div class="flex flex-row justify-content-center align-items-center">
-      <div class="col-12 sm:col-3" *ngFor="let service of services">
+    <div class="grid">
+      <div
+        class="col-12 md:col-6 text-center cursor-pointer card"
+        *ngFor="let service of services"
+      >
         <p-card header="{{ service.title }}">
           <ng-template pTemplate="header">
-            <div class="icon"><i [class]="service.icon"></i></div>
+            <!-- <div class="icon"><i [class]="service.icon"></i></div> -->
+            <div class="rounded-icon">
+              <i [class]="service.icon"></i>
+            </div>
           </ng-template>
           <p class="m-0">
             {{ service.description }}
@@ -17,25 +23,6 @@
         </p-card>
       </div>
     </div>
-
-    <!-- <div class="row">
-      <div
-        class="col-lg-3 col-md-6 d-flex align-items-stretch"
-        data-aos="zoom-in"
-        data-aos-delay="100"
-        *ngFor="let service of services"
-      >
-        <div class="icon-box">
-          <div class="icon"><i [class]="service.icon"></i></div>
-          <h4>
-            <a>{{ service.title }}</a>
-          </h4>
-          <p>{{ service.description }}</p>
-        </div>
-      </div>
-    </div> -->
   </div>
 </section>
 <!-- End Services Section -->
-
-<!-- <app-faq></app-faq> -->

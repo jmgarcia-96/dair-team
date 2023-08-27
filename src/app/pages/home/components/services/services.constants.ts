@@ -10,7 +10,7 @@ export class ServicesConstants {
       title: 'Plan de entrenamiento',
       description:
         ' Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi',
-      icon: 'pi ',
+      icon: 'pi pi-heart-fill',
     },
     {
       title: 'Plan de alimentación',
