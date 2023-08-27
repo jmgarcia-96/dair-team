@@ -1,3 +1,10 @@
-a {
-  cursor: pointer;
+body {
+  color: #fff;
+  font-family: arial;
+  font-weight: bold;
+  font-size: 40px;
+}
+.main-container {
+  margin: 0 auto;
+  min-height: 100vh; //min-height:1000px
 }
