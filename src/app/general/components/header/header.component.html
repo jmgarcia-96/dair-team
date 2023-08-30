@@ -4,4 +4,21 @@
       <p class="">DAIR <span>TEAM</span></p>
     </div>
   </ng-template>
+
+  <ng-template pTemplate="end">
+    <div
+      class="flex flex-row justify-content-center align-items-center w-full"
+      (click)="scroll('hero')"
+    >
+      <p-button
+        icon="pi pi-instagram"
+        styleClass="p-button-rounded p-button-warning p-button-text"
+        class=""
+      ></p-button>
+      <p-button
+        icon="pi pi-twitter"
+        styleClass="p-button-rounded p-button-info p-button-text"
+      ></p-button>
+    </div>
+  </ng-template>
 </p-menubar>

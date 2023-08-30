@@ -5,24 +5,28 @@ export class ServicesConstants {
       description:
         ' Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi',
       icon: 'pi pi-chart-bar',
+      img: 'assets/img/analisis.jpg',
     },
     {
       title: 'Plan de entrenamiento',
       description:
         ' Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi',
       icon: 'pi pi-heart-fill',
+      img: 'assets/img/entrenamiento.jpg',
     },
     {
       title: 'Plan de alimentación',
       description:
         ' Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi',
       icon: 'pi pi-apple',
+      img: 'assets/img/nutricion.jpg',
     },
     {
       title: 'Seguimiento',
       description:
         ' Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi',
       icon: 'pi pi-check-circle',
+      img: 'assets/img/seguimiento.jpg',
     },
   ];
 

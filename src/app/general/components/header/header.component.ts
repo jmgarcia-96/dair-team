@@ -26,7 +26,7 @@ export class HeaderComponent implements OnInit {
       // },
       {
         label: '¿Por qué nosotros?',
-        icon: 'pi pi-fw pi-check-square',
+        //icon: 'pi pi-fw pi-check-square',
         styleClass: localStorage.getItem('page') === 'about' ? 'active' : '',
         command: () => {
           this.scroll('about');
@@ -34,7 +34,7 @@ export class HeaderComponent implements OnInit {
       },
       {
         label: 'Equipo',
-        icon: 'pi pi-fw pi-users',
+        //icon: 'pi pi-fw pi-users',
         styleClass: localStorage.getItem('page') === 'team' ? 'active' : '',
         command: () => {
           this.scroll('team');
@@ -42,7 +42,7 @@ export class HeaderComponent implements OnInit {
       },
       {
         label: 'Servicios',
-        icon: 'pi pi-fw pi-ticket',
+        // icon: 'pi pi-fw pi-ticket',
         styleClass: localStorage.getItem('page') === 'services' ? 'active' : '',
         command: () => {
           this.scroll('services');
@@ -50,7 +50,7 @@ export class HeaderComponent implements OnInit {
       },
       {
         label: 'Preguntas frecuentes',
-        icon: 'pi pi-question-circle',
+        //icon: 'pi pi-question-circle',
         styleClass: localStorage.getItem('page') === 'faq' ? 'active' : '',
         command: () => {
           this.scroll('faq');
@@ -58,7 +58,7 @@ export class HeaderComponent implements OnInit {
       },
       {
         label: 'Contacto',
-        icon: 'pi pi-fw pi-send', //pi-envelope
+        //icon: 'pi pi-fw pi-send', //pi-envelope
         styleClass: localStorage.getItem('page') === 'contact' ? 'active' : '',
         command: () => {
           this.scroll('contact');

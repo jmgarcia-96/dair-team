@@ -7,20 +7,31 @@
 
     <div class="grid">
       <div
-        class="col-12 md:col-6 text-center cursor-pointer card"
+        class="col-12 md:col-3 text-center cursor-pointer card"
         *ngFor="let service of services"
       >
-        <p-card header="{{ service.title }}">
+        <div class="col-lg-6 col-md-6">
+          <div class="class-item">
+            <div class="ci-pic">
+              <img [src]="service.img" alt="" />
+            </div>
+            <div class="ci-text">
+              <h4>{{ service.title }}</h4>
+              <span>{{ service.description }}</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- <p-card header="{{ service.title }}">
           <ng-template pTemplate="header">
-            <!-- <div class="icon"><i [class]="service.icon"></i></div> -->
             <div class="rounded-icon">
               <i [class]="service.icon"></i>
             </div>
           </ng-template>
           <p class="m-0">
-            {{ service.description }}
+            {{ nservice.descriptio }}
           </p>
-        </p-card>
+        </p-card> -->
       </div>
     </div>
   </div>

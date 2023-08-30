@@ -7,78 +7,50 @@ import { Component } from '@angular/core';
   providers: [],
 })
 export class HeroComponent {
-  slides = [
+  images: any[] = [];
+
+  get activeIndex(): number {
+    return this._activeIndex;
+  }
+
+  set activeIndex(newValue) {
+    if (this.images && 0 <= newValue && newValue <= this.images.length - 1) {
+      this._activeIndex = newValue;
+    }
+  }
+
+  _activeIndex: number = 2;
+
+  responsiveOptions: any[] = [
     {
-      img: 'assets/img/slide/slide-1.jpg',
-      title: 'Welcome to Company',
-      text: ' Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.',
-      alt: 'Slide 1',
+      breakpoint: '1024px',
+      numVisible: 5,
     },
     {
-      img: 'assets/img/slide/slide-2.jpg',
-      title: 'Lorem Ipsum Dolor',
-      text: ' Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.',
-      alt: 'Slide 2',
+      breakpoint: '768px',
+      numVisible: 3,
     },
     {
-      img: 'assets/img/slide/slide-3.jpg',
-      title: 'Sequi ea ut et est quaerat',
-      text: ' Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.',
-      alt: 'Slide 3',
-    },
-    {
-      img: 'assets/img/slide/slide-1.jpg',
-      title: 'Welcome to Company',
-      text: ' Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.',
-      alt: 'Slide 1',
-    },
-    {
-      img: 'assets/img/slide/slide-2.jpg',
-      title: 'Lorem Ipsum Dolor',
-      text: ' Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.',
-      alt: 'Slide 2',
-    },
-    {
-      img: 'assets/img/slide/slide-3.jpg',
-      title: 'Sequi ea ut et est quaerat',
-      text: ' Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.',
-      alt: 'Slide 3',
+      breakpoint: '560px',
+      numVisible: 1,
     },
   ];
-  responsiveOptions: any[] = [];
 
   constructor() {}
 
   ngOnInit() {
-    this.responsiveOptions = [
-      {
-        breakpoint: '1199px',
-        numVisible: 1,
-        numScroll: 1,
-      },
-      {
-        breakpoint: '991px',
-        numVisible: 2,
-        numScroll: 1,
-      },
-      {
-        breakpoint: '767px',
-        numVisible: 1,
-        numScroll: 1,
-      },
+    this.images = [
+      'src/assets/img/hero-2.jpg',
+      'src/assets/img/hero-2.jpg',
+      'src/assets/img/hero-2.jpg',
     ];
   }
 
-  getSeverity(status: string) {
-    switch (status) {
-      case 'INSTOCK':
-        return 'success';
-      case 'LOWSTOCK':
-        return 'warning';
-      case 'OUTOFSTOCK':
-        return 'danger';
-      default:
-        return undefined;
-    }
+  next() {
+    this.activeIndex++;
+  }
+
+  prev() {
+    this.activeIndex--;
   }
 }

@@ -1,12 +1,12 @@
 <!-- ======= Team Section ======= -->
 <section id="team" class="team">
-  <div class="container" data-aos="fade-up">
+  <div class="container">
     <div class="section-header">
       <p>Nuestros <span>Profesionales</span></p>
     </div>
 
-    <div class="grid">
-      <div class="col-12 md:col text-center" *ngFor="let member of members">
+    <div class="grid justify-content-center">
+      <div class="col-12 md:col-4 text-center" *ngFor="let member of members">
         <p-card header="{{ member.name }}" subheader="{{ member.role }}">
           <ng-template pTemplate="header">
             <img alt="Card" [src]="member.img" />

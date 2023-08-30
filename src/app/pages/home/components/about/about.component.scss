@@ -7,19 +7,12 @@
   &:focus {
     box-shadow: none;
   }
+  &:hover {
+    color: var(--color-white) !important;
+    background-color: var(--color-primary) !important;
+  }
 }
 
-/* Cambiar el color de los indicadores inactivos */
-:host ::ng-deep .p-carousel .p-carousel-indicator {
-  background-color: red !important; /* Cambia este color según tus preferencias */
-}
-
-/* Cambiar el color del indicador activo */
-:host ::ng-deep .p-carousel .p-carousel-indicator.p-link {
-  background-color: green !important; /* Cambia este color según tus preferencias */
-}
-
-/* Cambiar el color de los indicadores inactivos */
 :host
   ::ng-deep
   .p-carousel

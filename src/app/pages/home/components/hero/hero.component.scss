@@ -7,14 +7,14 @@
   background-size: cover;
   position: relative;
   padding: 60px 0 60px 0;
-  background-image: url("../../../../../assets/img/mancuernas.jpg");
+  background-image: url("../../../../../assets/img/hero-2.jpg");
 }
 
 .hero h2 {
   font-size: 50px;
   font-weight: 700;
   margin-bottom: 20px;
-  color: var(--color-default);
+  color: var(--color-white);
   font-family: var(--font-primary);
 }
 
@@ -26,4 +26,20 @@
   color: var(--color-white);
   font-weight: 400;
   margin-bottom: 30px;
+}
+
+.hero .overlay-intro {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0px;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+}
+
+.hero .intro-container {
+  position: relative;
+  z-index: 2;
 }

@@ -13,6 +13,7 @@ import { ServicesComponent } from './components/services/services.component';
 import { FaqComponent } from './components/faq/faq.component';
 import { ServicesConstants } from './components/services/services.constants';
 import { FaqConstants } from './components/faq/faq.constants';
+import { GalleriaModule } from 'primeng/galleria';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { FaqConstants } from './components/faq/faq.constants';
     CarouselModule,
     CardModule,
     AccordionModule,
+    GalleriaModule,
   ],
 })
 export class HomeModule {}
