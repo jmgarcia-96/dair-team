@@ -3,15 +3,14 @@
 --------------------------------------------------------------*/
 .icon {
   font-size: 30px;
-  color: var(--color-primary);
+  color: var(--color-white);
   display: inline-block;
   height: 65px;
   width: 65px;
-  background: #363636;
-  border-radius: 50%;
+  background: var(--color-primary);
+  border-radius: 25%;
   line-height: 65px;
   text-align: center;
-  margin-right: 20px;
 }
 
 p {
@@ -19,4 +18,16 @@ p {
   color: #c4c4c4;
   margin-bottom: 0;
   padding-top: 10px;
+}
+
+:host ::ng-deep .p-button {
+  width: 100% !important;
+}
+
+.insta-account {
+  color: var(--color-white);
+  &:hover {
+    color: var(--color-primary);
+    cursor: pointer;
+  }
 }

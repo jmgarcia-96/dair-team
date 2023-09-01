@@ -10,7 +10,7 @@
   //   "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   //--font-primary: "Amatic SC", sans-serif;
   --font-primary: "Oswald", sans-serif;
-  --font-secondary: "Inter", sans-serif;
+  --font-secondary: "Mulish", sans-serif;
   --font-logo: "Black Ops One", cursive;
 }
 
@@ -43,7 +43,7 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: var(--font-primary);
+  font-family: var(--font-secondary);
   color: var(--color-default);
   background-color: var(--color-section);
 }
@@ -53,7 +53,9 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p,
+li {
   font-family: var(--font-secondary);
 }
 
@@ -95,14 +97,14 @@ section {
   padding: 0;
   color: red;
   text-transform: uppercase;
-  font-family: var(--font-primary);
+  font-family: var(--font-secondary);
 }
 
 .section-header p {
   margin: 0;
   font-size: 48px;
   font-weight: 600;
-  font-family: var(--font-primary);
+  font-family: var(--font-secondary);
   color: var(--color-white);
 }
 

@@ -14,6 +14,8 @@ import { FaqComponent } from './components/faq/faq.component';
 import { ServicesConstants } from './components/services/services.constants';
 import { FaqConstants } from './components/faq/faq.constants';
 import { GalleriaModule } from 'primeng/galleria';
+import { InputTextareaModule } from 'primeng/inputtextarea';
+import { InputTextModule } from 'primeng/inputtext';
 
 @NgModule({
   declarations: [
@@ -33,6 +35,8 @@ import { GalleriaModule } from 'primeng/galleria';
     CardModule,
     AccordionModule,
     GalleriaModule,
+    InputTextModule,
+    InputTextareaModule,
   ],
 })
 export class HomeModule {}
