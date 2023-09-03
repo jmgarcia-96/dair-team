@@ -1,15 +1,12 @@
-<p-menubar [model]="items" (click)="activeMenu($event)">
+<p-menubar [model]="generalService.items" (click)="activeMenu($event)">
   <ng-template pTemplate="start">
-    <div class="logo-header pb-0 cursor-pointer" (click)="scroll('hero')">
+    <div class="logo-header pb-0 cursor-pointer" routerLink="/home">
       <p class="">DAIR <span>TEAM</span></p>
     </div>
   </ng-template>
 
   <ng-template pTemplate="end">
-    <div
-      class="flex flex-row justify-content-center align-items-center w-full"
-      (click)="scroll('hero')"
-    >
+    <div class="flex flex-row justify-content-center align-items-center w-full">
       <p-button
         icon="pi pi-instagram"
         styleClass="p-button-rounded p-button-warning p-button-text"

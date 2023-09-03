@@ -1,13 +1,9 @@
-<!-- <a
-  class="scroll-top d-flex align-items-center justify-content-center"
-  (click)="scrollToTop()"
-  ><i class="bi bi-arrow-up-short"></i
-></a>
-
-<div id="preloader"></div> -->
-
 <main class="main-container">
   <app-header></app-header>
   <router-outlet></router-outlet>
   <app-footer></app-footer>
 </main>
+
+<div id="preloader" *ngIf="showLoader">
+  <div class="loader"></div>
+</div>

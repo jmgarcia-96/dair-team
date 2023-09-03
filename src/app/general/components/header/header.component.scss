@@ -67,20 +67,18 @@
 
 .logo-header:hover {
   transform: scale(1.1);
+  transition: all 0.3s;
 }
 
 .logo-header p {
   margin: 0;
   font-size: 35px;
-  //font-weight: bold;
   font-family: var(--font-logo);
 
   color: var(--color-primary);
 }
 
 .logo-header p span {
-  //font-weight: bold;
-
   color: var(--color-white);
 }
 
@@ -121,7 +119,3 @@
 // :host ::ng-deep .p-menubar .p-menuiten:hover::after {
 //   transform: scaleX(1);
 // }
-
-:host ::ng-deep .p-menubar .p-button .p-button-icon .btn-insta {
-  color: red !important;
-}
