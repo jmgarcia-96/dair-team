@@ -13,14 +13,15 @@
 }
 :host ::ng-deep .p-menubar {
   justify-content: center !important;
-  background: var(--color-bg);
+  //background: var(--color-bg);
+  background: transparent;
   border: none;
-  position: sticky;
-  position: -webkit-sticky; // Needed for Safari browsers.
+  position: relative;
   z-index: 10000; // This prevents elements to be seen through the toolbar.
   top: 0; // Required for "position: sticky" to take effect.
   border-radius: 0;
-  padding-top: 0 !important;
+  padding: 0 15px;
+  padding-top: 50px;
 }
 
 :host

@@ -20,7 +20,7 @@ export class ContactConstants {
     },
     {
       title: 'Disponibilidad',
-      text: 'Lunes a Domingo : 06:00–22:00',
+      text: 'Lunes a Viernes: 09:00–21:00',
       icon: 'pi pi-clock',
       children: [],
     },

@@ -13,13 +13,9 @@ export class GeneralService {
         routerLink: 'home',
       },
       {
-        label: 'Sobre nosotros',
+        label: 'Sobre mí',
         routerLink: 'about',
       },
-      // {
-      //   label: 'Equipo',
-      //   routerLink: 'team',
-      // },
       {
         label: 'Servicios',
         routerLink: 'services',

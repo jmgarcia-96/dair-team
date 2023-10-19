@@ -7,6 +7,7 @@ import {
 } from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
 import { ContactConstants } from './contact.constants';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-contact',
@@ -25,7 +26,11 @@ import { ContactConstants } from './contact.constants';
 export class ContactComponent implements OnInit {
   infoList: any[] = [];
 
-  constructor(private contactConstants: ContactConstants) {
+  constructor(
+    private contactConstants: ContactConstants,
+    private titleService: Title
+  ) {
+    this.titleService.setTitle('Contacto - DAIR');
     this.infoList = this.contactConstants.infoList;
   }
 

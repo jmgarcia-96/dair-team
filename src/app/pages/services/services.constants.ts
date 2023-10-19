@@ -3,28 +3,28 @@ export class ServicesConstants {
     {
       title: 'Análisis',
       description:
-        ' Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi',
+        'Comenzaremos analizando tu situación, para gestionar de la mejor forma la manera de conseguir tus objetivos. Para ello, diseñaremos un plan de alimentación y entrenamiento 100% personalizado para ti, en función de tus gustos, preferencias, horarios, posibilidades, etc. El cuál, iremos modificando y adaptando a medida que vayas progresando y obteniendo resultados.',
       icon: 'pi pi-chart-bar',
       img: 'assets/img/analisis.jpg',
     },
     {
-      title: 'Plan de entrenamiento',
+      title: 'Entrenamiento',
       description:
-        ' Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi',
+        'Diseñaremos un plan de entrenamiento totalmente adaptado a ti. Tendremos en cuenta el lugar donde entrenes, el tiempo del que dispongas, material... Todo ello para sacar el máximo rendimiento de la forma más eficiente.',
       icon: 'pi pi-heart-fill',
       img: 'assets/img/entrenamiento.jpg',
     },
     {
-      title: 'Plan de alimentación',
+      title: 'Nutrición',
       description:
-        ' Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi',
+        'Planificaremos tu alimentación de forma que sea llevadera a largo plazo, de esta forma crearemos el HÁBITO. Adaptaremos cada comida según tus gustos y preferencias, pero siempre controlando minuciosamente valores y cantidades.',
       icon: 'pi pi-apple',
       img: 'assets/img/nutricion.jpg',
     },
     {
       title: 'Seguimiento',
       description:
-        ' Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi',
+        'Realizaremos un seguimiento constante, incluyendo revisiones completas para ir valorando el progreso e ir realizando los ajustes necesarios. Estaremos a tu disposición 24/7, no solo para cualquier duda que te pueda surgir, también para ser tu motivación día a día.',
       icon: 'pi pi-check-circle',
       img: 'assets/img/seguimiento.jpg',
     },

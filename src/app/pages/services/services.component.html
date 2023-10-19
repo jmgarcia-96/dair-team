@@ -2,21 +2,22 @@
 <section id="services" class="services">
   <div class="container">
     <div class="section-header">
-      <p>Nuestros <span>Servicios</span></p>
+      <p>Nuestros <span>servicios</span></p>
     </div>
 
     <div class="grid">
       <div
-        class="col-12 md:col-3 text-center cursor-pointer card"
+        class="col-12 sm:col-6 lg:col-3 text-center cursor-pointer card"
         *ngFor="let service of services"
       >
-        <div class="col-lg-6 col-md-6">
-          <div class="class-item">
-            <div class="ci-pic">
-              <img [src]="service.img" alt="" />
-            </div>
-            <div class="ci-text">
-              <h4>{{ service.title }}</h4>
+        <div class="class-item">
+          <div class="ci-pic">
+            <img [src]="service.img" alt="" />
+          </div>
+
+          <div class="ci-text">
+            <h4>{{ service.title }}</h4>
+            <div class="text-justify">
               <span>{{ service.description }}</span>
             </div>
           </div>

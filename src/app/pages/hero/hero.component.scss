@@ -7,15 +7,19 @@
   background-size: cover;
   position: relative;
   padding: 60px 0 60px 0;
-  background-image: url("../../../assets/img/hero-2.jpg");
+  background-image: url("../../../assets/img/hero-prueba.jpg");
 }
 
 .hero h2 {
-  font-size: 50px;
-  font-weight: 700;
-  margin-bottom: 20px;
   color: var(--color-white);
   font-family: var(--font-primary);
+  font-size: 50px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 42px;
+  strong {
+    color: var(--color-primary);
+  }
 }
 
 .hero h2 span {
