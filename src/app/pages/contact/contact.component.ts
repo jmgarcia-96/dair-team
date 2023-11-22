@@ -30,7 +30,7 @@ export class ContactComponent implements OnInit {
     private contactConstants: ContactConstants,
     private titleService: Title
   ) {
-    this.titleService.setTitle('Contacto - DAIR');
+    this.titleService.setTitle('Contacto - DGLTrainer');
     this.infoList = this.contactConstants.infoList;
   }
 

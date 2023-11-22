@@ -48,7 +48,7 @@ export class AboutComponent implements OnInit {
   responsiveOptions: any[] = [];
 
   constructor(private titleService: Title) {
-    this.titleService.setTitle('Sobre Nosotros - DAIR');
+    this.titleService.setTitle('Sobre mí - DGLTrainer');
   }
 
   ngOnInit() {

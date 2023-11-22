@@ -4,11 +4,11 @@ export class ContactConstants {
       title: 'Instagram',
       text: '',
       icon: 'pi pi-instagram',
-      children: ['@dair.team', '@7danielgarcia', '@irenedelgador97'],
+      children: ['@7danielgarcia'],
     },
     {
       title: 'Email',
-      text: 'dair.teamfit@gmail.com',
+      text: 'dgl.trainer@gmail.com',
       icon: 'pi pi-envelope',
       children: [],
     },
